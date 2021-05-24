@@ -8,13 +8,13 @@ interface VideoBannerProps {
 
 export const VideoBanner: React.FC<VideoBannerProps> = ({ sources, heading, subheading}) => {
     return (
-        <section className={styles.banner}>
+        <section className={styles.videoBanner}>
             <video autoPlay playsInline loop muted>
                 {sources.map(source => (<source key={source} src={source} type="video/mp4" />))}
             </video>
             {heading || subheading 
                 ? (
-                    <div className={styles.bannerOverlay}>
+                    <div className={styles.videoBannerOverlay}>
                         <h1>{heading}</h1>
                         <p>{subheading}</p>
                     </div>
