@@ -35,7 +35,11 @@ export const Slideshow: React.FC<SlideshowProps> = ({photoSources}) => {
                 <button className={styles.prev} onClick={prevSlide}>❮</button>
                 <button className={styles.next} onClick={nextSlide}>❯</button>
                 <div className={styles.dotContainer}>
-                    {photoSources.map((src, index) => <span key={index} className={styles.dot} />)}
+                    {photoSources.map((src, index) => 
+                    <span 
+                        key={index} 
+                        className={styles.dot} 
+                        style={{backgroundColor: index === slideIndex ? '#717171' : '#bbb'}} />)}
                 </div>
             </div>
         </section>
