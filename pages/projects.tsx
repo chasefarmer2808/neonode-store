@@ -23,7 +23,7 @@ export default function Projects() {
     return (
         <>
             <NavBar />
-            <main>
+            <main style={{padding: '12px'}}>
                 <h1>Here are some of the things you can make with Neonode!</h1>
                 <section className="banner">
                     <h2>Portable Bike Frame Light</h2>

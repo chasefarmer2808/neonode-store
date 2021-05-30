@@ -10,11 +10,20 @@ body {
 
 * {
   box-sizing: border-box;
+  --bg-color-primary: #00b4ff;
+  --bg-color-secondary: #ffd700;
+  --bg-color-accent: #c506aa
+}
+
+main {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(197,6,170,1) 0%, rgba(0,180,255,1) 100%);
+  color: white;
 }
 
 nav {
-  color: white;
-  background-color: #602080;
+  color: black;
+  background-color: var(--bg-color-secondary);
   display: flex;
   justify-content: flex-end;
 }
@@ -30,10 +39,12 @@ a:hover {
 }
 
 a.active {
+  color: white;
   background-color: #202040;
 }
 
 nav a {
+  color: black;
   font-size: 1.5em;
   padding: 4px;
 }
