@@ -1,0 +1,20 @@
+/* Mobile */
+.linksContainer {
+    display: none
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop */
+@media only screen and (min-width: 600px) {
+    .hamburgerContainer {
+        display: none;
+    }
+
+    .linksContainer {
+        display: block
+    }
+}

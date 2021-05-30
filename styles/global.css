@@ -12,13 +12,38 @@ body {
   box-sizing: border-box;
 }
 
+nav {
+  color: white;
+  background-color: #602080;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
 a {
-  color: #0070f3;
+  color: white;
   text-decoration: none;
+  display: inline-block;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+a.active {
+  background-color: #202040;
+}
+
+nav a {
+  font-size: 1.5em;
+  padding: 4px;
 }
 
 img {
@@ -31,6 +56,17 @@ video {
   width: 100%;
   max-height: 100%;
   object-fit: cover;
+}
+
+button[class="icon"] {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: currentColor;
+}
+
+h1 {
+  margin: 0;
 }
 
 .banner {
