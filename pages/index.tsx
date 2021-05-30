@@ -17,7 +17,7 @@ export default function Home() {
           subheading="The programmable LED controller"/>
         <section className="banner">
           <h1>What is Neonode?</h1>
-          <div className="bannerColumn">
+          <div className="bannerContent">
             <p>A programmable controller for addressable, 5v LED strips!  Neonode is built on a custom PCB that takes care of all the details, and lets you jump right into your LED projects.</p>
             <img id={styles.boardMainImage} src="images/neonode_outline.png" />
           </div>
