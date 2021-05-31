@@ -1,0 +1,19 @@
+.mainContainer {
+    display: inline-block;
+    border: 2px solid var(--bg-color-secondary);
+    border-radius: 10px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.mainContainer > * {
+    padding: 0 12px;
+}
+
+.titleContainer {
+    border-bottom: 2px solid var(--bg-color-secondary);
+}
+
+.featureList {
+    
+}

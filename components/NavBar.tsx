@@ -24,6 +24,9 @@ export const NavBar: React.FC = () => {
                     <Link href="/projects">
                         <a className={router.pathname === '/projects' ? 'active' : ''}>Projects</a>
                     </Link>
+                    <Link href="/pricing">
+                        <a className={router.pathname === '/pricing' ? 'active' : ''}>Pricing</a>
+                    </Link>
             </div>
         </nav>
     )
