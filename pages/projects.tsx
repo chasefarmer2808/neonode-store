@@ -21,37 +21,35 @@ export default function Projects() {
     }, []);
 
     return (
-        <>
+        <main>
             <NavBar />
-            <main style={{padding: '12px'}}>
-                <h1>Here are some of the things you can make with Neonode!</h1>
-                <section className="banner">
-                    <h2>Portable Bike Frame Light</h2>
-                    <div className="bannerContent">
-                        <p>
-                            This one was a no-brainer.  Who wouldn't want to roll around town with rainbows
-                            spewing everywhere?  Because Neonode runs on 5v, it can be powered with a 5v portable
-                            battery bank.  Just had to find one with at least 2 amps output, a USB-A to barrel plug
-                            converter cable, and a top-tube bag to carry everything in.  In this project, I used the 
-                            adhesive on the LED strip to stick the lights to the frame.  But if you want a less permanant
-                            solution, zip-ties would work great as well.
-                        </p>
-                        <Slideshow photoSources={bikePhotos} />
-                    </div>
-                </section>
-                <section className="banner">
-                    <h2>Bike Wheel Lamp</h2>
-                    <div className="bannerContent">
-                        <p>
-                            Yes, I like bikes.  So I put a strip of LEDs in the rim of an old bike wheel and put it on a wall.  And
-                            it turned out great!  Walls are great at diffusing the light.  The trench of the wheel rim fits the LEDs perfectly.  
-                            The electionics were attached to the bottom of the frame to meet the power cable.  And the stem hole was convenient for feeding the LED
-                            connector wires through.  
-                        </p>
-                        <Slideshow photoSources={wheelPhotos} />
-                    </div>
-                </section>
-            </main>
-        </>
+            <h1>Here are some of the things you can make with Neonode!</h1>
+            <section className="banner">
+                <h2>Portable Bike Frame Light</h2>
+                <div className="bannerContent">
+                    <p>
+                        This one was a no-brainer.  Who wouldn't want to roll around town with rainbows
+                        spewing everywhere?  Because Neonode runs on 5v, it can be powered with a 5v portable
+                        battery bank.  Just had to find one with at least 2 amps output, a USB-A to barrel plug
+                        converter cable, and a top-tube bag to carry everything in.  In this project, I used the 
+                        adhesive on the LED strip to stick the lights to the frame.  But if you want a less permanant
+                        solution, zip-ties would work great as well.
+                    </p>
+                    <Slideshow photoSources={bikePhotos} />
+                </div>
+            </section>
+            <section className="banner">
+                <h2>Bike Wheel Lamp</h2>
+                <div className="bannerContent">
+                    <p>
+                        Yes, I like bikes.  So I put a strip of LEDs in the rim of an old bike wheel and put it on a wall.  And
+                        it turned out great!  Walls are great at diffusing the light.  The trench of the wheel rim fits the LEDs perfectly.  
+                        The electionics were attached to the bottom of the frame to meet the power cable.  And the stem hole was convenient for feeding the LED
+                        connector wires through.  
+                    </p>
+                    <Slideshow photoSources={wheelPhotos} />
+                </div>
+            </section>
+        </main>
     )
 }
