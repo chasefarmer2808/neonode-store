@@ -28,6 +28,10 @@ nav {
   justify-content: flex-end;
 }
 
+p {
+  font-size: 20px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -74,12 +78,22 @@ h1 {
 
 .banner {
   padding: 12px;
+  border-bottom: 3px solid var(--bg-color-secondary);
+}
+
+.banner a {
+  color: var(--bg-color-secondary)
 }
 
 .bannerContent {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.textImageBanner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media only screen and (max-width: 600px) {
@@ -90,5 +104,10 @@ h1 {
 
   .bannerContent {
     flex-direction: column;
+  }
+
+  .textImageBanner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
   }
 }
